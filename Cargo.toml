@@ -1,0 +1,19 @@
+[package]
+name = "pearson-plus-extractor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# interface
+clap = { version = "4.5", features = ["derive"] }
+# runtime
+tokio = { version = "1.40", features = ["rt", "macros"] }
+# request
+reqwest = "0.12"
+# parse
+serde = "1.0"
+sonic-rs = "0.3"
+# write
+printpdf = { version = "0.7", features = ["embedded_images"] }
+# error
+anyhow = "1.0"
